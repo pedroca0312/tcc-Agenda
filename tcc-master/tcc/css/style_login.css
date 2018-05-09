@@ -1,0 +1,56 @@
+body{
+       background-color: #383f52;
+     }
+
+      .btn-primary:hover {
+        background-color: #008A8C;
+        border-color: #008A8C; 
+       
+      }
+
+      .btn-primary{
+        background-color: #00A1A3;
+        border-color: #00A1A3;
+        width: 200px;
+
+
+      }
+      
+
+      .btn-primary:focus {
+        background-color: #008A8C;
+
+      }
+
+
+       #usuario{
+            
+            padding-top: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+      }
+
+     
+
+       #senha{
+          border-radius: .25rem;
+           margin-left: auto;
+           margin-right: auto;
+           text-align: center;
+     }
+
+       #entrar{
+
+           margin-left: auto;
+           margin-right: auto;
+           text-align: center;
+      }
+
+      #cadastro{
+        color: white;
+      }
+
+      .inputLogin{
+          display: inline;
+      }

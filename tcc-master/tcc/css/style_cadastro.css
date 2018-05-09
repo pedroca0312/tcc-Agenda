@@ -1,0 +1,63 @@
+	body{
+		background-color: #383f52;
+	}
+
+	.btn-primary:hover {
+        background-color: #008A8C;
+        border-color: #008A8C; 
+      
+ 	}
+
+	.btn-primary{
+
+        background-color: #00A1A3;
+        border-color: #00A1A3;
+        width: 200px;
+
+ 	}
+
+ 	#nome{
+ 		padding-top: 20%;
+ 		text-align:center;
+ 		margin-right: auto;
+ 		margin-left: auto;
+ 		
+ 	}
+
+ 	#usuario{
+ 		text-align: center;
+ 		margin-right: auto;
+ 		margin-left: auto;
+ 		
+ 	}
+
+ 	#email{
+ 		text-align: center;
+ 		margin-right: auto;
+ 		margin-left: auto;
+ 		
+ 	}
+
+ 	#senha{
+ 		text-align: center;
+ 		margin-right: auto;
+ 		margin-left: auto;
+ 		
+ 	}
+
+ 	#confirma_senha{
+ 		
+ 		text-align: center;
+ 		margin-right: auto;
+ 		margin-left: auto;
+ 	}
+
+ 	#botao{
+ 		text-align: center;
+ 		margin-right: auto;
+ 		margin-left: auto;
+ 		
+ 	}
+	.inputLogin{
+		display: inline;
+	}
