@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<form action="../controlador/usuario.php?acao=verifica" method="post">
+<form action="?acao=verifica" method="post">
   <div id="usuario">
 
       <input type="text" class="form-control inputLogin" name="usuario" placeholder="Usuario" style="width: 200px"> <br><br>

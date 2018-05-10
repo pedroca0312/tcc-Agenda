@@ -6,17 +6,18 @@ class CrudLogin
 {
     public $conexao;
 
-    public function GetUsuario($id){
+    public function GetUsuarios()
+    {
         $this->conexao = BDConection::getConexao();
 
-        $sql = "select * from usuario where username = '".$id."'";
+        $sql = "select * from usuario";
 
         $res = $this->conexao->query($sql);
-
-        $usuario = $res->fetch(PDO::FETCH_ASSOC);
-
-        $usu = new Usuario($usuario['username'],$usuario['nome'],$usuario['email'],$usuario['senha'],$usuario['id_usuario']);
-
+        $usu = [];
+        $usuarios = $res->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($usuarios as $usuario){
+            $usu[] = new Usuario($usuario['nome'], $usuario['email'], $usuario['senha'],$usuario['id_usuario'], $usuario['username']);
+        }
         return $usu;
 
 
@@ -27,8 +28,10 @@ class CrudLogin
 
         $usu[] = $usuario->getNome();
         $usu[] = $usuario->getEmail();
-        $usu[] = $usuario->getUsername();
         $usu[] = $usuario->getSenha();
+        $usu[] = $usuario->getUsername();
+
+
 
         $sql = "insert into usuario (nome,email,username,senha) values ($usu[0],$usu[1],$usu[2],$usu[3])";
 
