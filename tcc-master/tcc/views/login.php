@@ -30,7 +30,7 @@
   <div id="cadastro">
 
         Não possui uma conta?
-        <a href="../views/cadastro.php">Cadastre-se</a> <br><br>
+        <a href="?acao=cadastrar">Cadastre-se</a> <br><br>
         
 
 

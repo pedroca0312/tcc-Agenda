@@ -1,6 +1,12 @@
 <?php
 require_once '../Models/CrudLogin.php';
-$acao = 'verifica';
+require_once '../Models/Usuario.php';
+
+if (isset($_GET['acao'])){
+    $acao = $_GET['acao'];
+}else{
+    $acao = 'verifica';
+}
 
 switch ($acao) {
     case 'verifica':
@@ -19,4 +25,16 @@ switch ($acao) {
 
         }
         break;
+    case 'cadastrar':
+        $crud = new CrudLogin();
+
+        if (isset($_GET)){
+            include '../views/cadastro.php';
+        }
+        if (isset($_POST['botao'])){
+            $usuario = new Usuario($_POST['nome'],$_POST['email'],$_POST['senha'],Null,$_POST['usuario']);
+        $crud->CadastrarUsuario($usuario);
+
+        header('Location: ../views/sucesso.php');
+        }
 }

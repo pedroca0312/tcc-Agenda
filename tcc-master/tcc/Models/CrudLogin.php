@@ -33,8 +33,9 @@ class CrudLogin
 
 
 
-        $sql = "insert into usuario (nome,email,username,senha) values ($usu[0],$usu[1],$usu[2],$usu[3])";
+        $sql = "insert into usuario (nome,email,senha,username) values ('".$usu[0]."','".$usu[1]."','".$usu[2]."','".$usu[3]."')";
 
+        $res = $this->conexao->query($sql);
 
     }
 
