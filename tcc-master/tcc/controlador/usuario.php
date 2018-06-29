@@ -17,7 +17,7 @@ switch ($acao) {
             foreach ($usuarios as $usuario) {
                 if ($_POST['usuario'] == $usuario->username and $_POST['senha'] == $usuario->senha) {
                     echo 'oi';
-                    header('Location: ../views/sucesso.php ');
+                    header('Location: ../fullcalendar-3.9.0/index.php');
                 }
             }
         } else {
