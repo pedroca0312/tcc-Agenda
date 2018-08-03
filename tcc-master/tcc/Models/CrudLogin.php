@@ -2,6 +2,7 @@
 
 require_once 'BDConection.php';
 require_once 'Usuario.php';
+
 class CrudLogin
 {
     public $conexao;
